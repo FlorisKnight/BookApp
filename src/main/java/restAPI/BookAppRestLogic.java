@@ -1,9 +1,11 @@
 package restAPI;
 
 public class BookAppRestLogic {
-    private BookAppRestDB orm;
+    private IBookAppRestDB orm;
 
-    public BookAppRestLogic(BookAppRestDB orm) {
+    public BookAppRestLogic(IBookAppRestDB orm) {
         this.orm = orm;
     }
+
+
 }
