@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/BookAppClient" libraries="{Bookapp/BookAppClient/node_modules, angular, angular-route}" />
+    <file url="PROJECT" libraries="{Angular, Bookapp/BookAppClient/node_modules, angular, angular-route}" />
+  </component>
+</project>

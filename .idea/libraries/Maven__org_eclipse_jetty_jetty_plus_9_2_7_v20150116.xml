@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-plus/9.2.7.v20150116/jetty-plus-9.2.7.v20150116.jar!/" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-plus/9.2.7.v20150116/jetty-plus-9.2.7.v20150116-sources.jar!/" />
     </SOURCES>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Angular" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://D:/Extra libraries/angular-1.7.4/angular-1.7.4" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://D:/Extra libraries/angular-1.7.4/angular-1.7.4" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
