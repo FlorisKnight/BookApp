@@ -11,7 +11,6 @@ public class BookAppRestLogic implements IBookAppRestLogic{
         this.orm = orm;
     }
 
-
     public int Login(String loginData, String password) {
         if (CheckString(loginData) && CheckString(password)){
             int userId = orm.Login(loginData, password);

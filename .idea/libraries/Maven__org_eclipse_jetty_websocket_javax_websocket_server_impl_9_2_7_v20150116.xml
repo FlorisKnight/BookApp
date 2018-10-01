@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.2.7.v20150116/javax-websocket-server-impl-9.2.7.v20150116.jar!/" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-server-impl/9.2.7.v20150116/javax-websocket-server-impl-9.2.7.v20150116-sources.jar!/" />
     </SOURCES>

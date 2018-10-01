@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class User {
     @Id
     @Column(name="id")
+    @GeneratedValue
     private int id;
 
     public int getId() {

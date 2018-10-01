@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-client/2.7/jersey-client-2.7.jar!/" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-client/2.7/jersey-client-2.7-sources.jar!/" />
     </SOURCES>

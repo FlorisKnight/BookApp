@@ -1,8 +1,24 @@
 package models;
 
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 public class UsersBooksColumn {
+
+    @Id
+    @Column(name="id")
+    @GeneratedValue
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Column(name="bookId")
     private int bookId;
 
