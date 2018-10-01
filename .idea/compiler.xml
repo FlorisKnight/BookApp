@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Fun4_Hibernate_DAL" target="1.5" />
+      <module name="Fun4_Hibernate_DAL" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
