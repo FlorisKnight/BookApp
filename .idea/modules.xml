@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BookAppClient/BookAppClient.iml" filepath="$PROJECT_DIR$/BookAppClient/BookAppClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fun4_Hibernate_DAL.iml" filepath="$PROJECT_DIR$/Fun4_Hibernate_DAL.iml" />
     </modules>
   </component>
