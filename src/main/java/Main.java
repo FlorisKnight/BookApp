@@ -43,7 +43,7 @@ public class Main {
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
 
-        session.save(user);
+        //session.save(user);
 
 
         List users = session.createCriteria(User.class)

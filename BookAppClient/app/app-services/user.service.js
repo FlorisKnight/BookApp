@@ -19,7 +19,7 @@
         return service;
 
         function GetAll() {
-            return $http.get('/api/users').then(handleSuccess, handleError('Error getting all users'));
+            return $http.get('http://localhost:8091/bookapp/{"loginData":"","password":""}').then(handleSuccess, handleError('Error getting all users'));
         }
 
         function GetById(id) {
@@ -27,7 +27,8 @@
         }
 
         function GetByUsername(username) {
-            return $http.get('/api/users/' + username).then(handleSuccess, handleError('Error getting user by username'));
+
+            return $http.get('localhost:8091/bookapp/player/login/'+ username + +).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function Create(user) {

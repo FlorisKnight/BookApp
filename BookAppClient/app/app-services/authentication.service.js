@@ -19,18 +19,48 @@
 
             /* Fake database
              ----------------------------------------------*/
+
             $timeout(function () {
+/*
+                $http.get('http://localhost:8091/bookapp').
+                then(function(response) {
+                    alert("FFUFUUUUFUUFVCKCK");
+                    $scope.greeting = response.data;
+                    alert(response);
+                });
+                alert("cuck");
+*/
+                var loginObject = new Object();
+                loginObject.loginData = username;
+                loginObject.password = password;
+
+                var data = 0;
+                $http({
+                    url: 'http://localhost:8091/bookapp/player/login',
+                    dataType: 'json',
+                    method: 'POST',
+                    data: loginObject
+                    }).then(function(response){
+                        data = response;
+                    alert(data);
+                }), function errorCallBack(response) {
+                    console.log('error')
+                }
+
+                /*
                 var response;
                 UserService.GetByUsername(username)
-                    .then(function (user) {
-                        if (user !== null && user.password === password) {
+                    .then(function (userId) {
+                        if (userId === 7) {
                             response = { success: true };
                         } else {
                             response = { success: false, message: 'Username or password is incorrect' };
                         }
                         callback(response);
                     });
+*/
             }, 1000);
+
 
             /* voorbeeld van echte api
              ----------------------------------------------*/

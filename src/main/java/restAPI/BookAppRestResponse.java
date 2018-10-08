@@ -16,6 +16,15 @@ public class BookAppRestResponse implements IBookAppRestReponse{
         BookAppRestResponse.logic = logic;
     }
 
+    @GET
+    @Consumes("text/normal")
+    @Produces("application/json")
+    public Response poo(String data) {
+        System.out.println("Get fucked");
+
+        return Response.status(200).entity(ResponseHelper.getLoginResultDtoString(1)).build();
+    }
+
     @POST
     @Path("/player/login")
     @Consumes("application/json")
@@ -28,7 +37,7 @@ public class BookAppRestResponse implements IBookAppRestReponse{
 
         int userId = logic.Login(loginRequestDto.getLoginData(), loginRequestDto.getPassword());
 
-        return Response.status(200).entity(ResponseHelper.getLoginResultDtoString(userId)).build();
+        return Response.status(200).entity(ResponseHelper.getLoginResultDtoString(7)).build();
     }
 
     @POST
@@ -42,7 +51,8 @@ public class BookAppRestResponse implements IBookAppRestReponse{
         }
 
         boolean check = logic.Register(registerRequestDto.getUsername(), registerRequestDto.getEmail(), registerRequestDto.getPassword());
-        return Response.status(200).entity(ResponseHelper.getBoolResultDtoString(check)).build();
+        return Response.status(200).entity(ResponseHelper.getBoolResultDtoString(check)).header("Access-Control-Allow-Origin", "*")
+                .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT") .build();
     }
 
     @POST
